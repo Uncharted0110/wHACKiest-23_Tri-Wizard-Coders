@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <button id="dark-theme-toggle">Toggle Dark Theme</button>
+
+    <script>
+    var toggleBtn = document.getElementById("dark-theme-toggle");
+
+    toggleBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-theme");
+  }
+  );
+    </script>
+
     <style>
         /* Set a background color for the entire page */
 body {
     background-color: #e5e5cb;
+    font-family: Monaco, monospace;
+}
+/* Dark theme */
+.dark-theme {
+    background-color: black;
     font-family: Monaco, monospace;
 }
 
@@ -112,7 +128,7 @@ footer {
       </form>
     </main>
     <footer>
-        A platform that allows Nerds to be Lazy, the Lazy to be Nerds
+        A platform that allows Nerds to be Lazy and the Lazy to be Nerds.
     </footer>
   </body>
 </html>
